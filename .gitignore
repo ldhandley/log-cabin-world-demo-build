@@ -1,0 +1,10 @@
+*~
+\#*
+.\#*
+.DS_Store
+compiled/
+/doc/
+/out/
+*.exe
+*.zip
+*build/
