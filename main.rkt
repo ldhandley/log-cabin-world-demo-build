@@ -3,16 +3,18 @@
 (require log-cabin-world-demo-build/mod-info)
 
 (require-mod hierarchy)
+(require-mod spawners)
+(require-mod cabin-items)
 (require-mod fire-particles)
 (require-mod ice-particles)
-(require-mod rocks)
 
 (define my-mod-lang
   (append-rune-langs #:name main.rkt  
                      (hierarchy:my-mod-lang #:with-paren-runes? #t)
+                     (spawners:my-mod-lang)
+                     (cabin-items:my-mod-lang)
                      (fire-particles:my-mod-lang)
                      (ice-particles:my-mod-lang)
-                     (rocks:my-mod-lang)
 		     ))
 
 
